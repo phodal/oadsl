@@ -9,3 +9,5 @@ LoginFormValidate = {
     }
   }
 }
+
+LoginFormValidate[key]require(data[key])
