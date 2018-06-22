@@ -13,12 +13,4 @@ let data = {
   }
 }
 
-
-function workflowParer() {
-	this.generateProcess = function() {
-	  this.processes = Object.keys(this.data);
-	  for (let i = 0; i < this.processes.length; i++) {
-	    ...
-	  }
-	}
-}
+export function workflowParser() {}
