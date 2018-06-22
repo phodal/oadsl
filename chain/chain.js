@@ -1,8 +1,8 @@
-export default function SQL (param) {
-    this.WHERE = function(){
+export default function SQL(param) {
+    this.WHERE = () => {
         return this;
     };
-    this.ORDERBY = function(){
+    this.ORDERBY = () => {
         return this;
     };
     return this;
