@@ -1,14 +1,13 @@
-import DummyClass from "../src/oadsl"
+import SQL from '../src/chain/chain'
 
-/**
- * Dummy test
- */
-describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy()
+describe('OA DSL Test', () => {
+  it('Where defined', () => {
+    let sql = new SQL()
+    expect(sql.WHERE().ORDERBY()).toBeDefined()
   })
 
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+  it('Where defined', () => {
+    let sql = new SQL()
+    expect(sql.WHERE().ORDERBY()).toBeDefined()
   })
 })
