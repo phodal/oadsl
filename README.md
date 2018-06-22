@@ -1,1 +1,6 @@
-# dsl-by-examples
+# OADSL
+
+LICENSE
+---
+MIT
+
