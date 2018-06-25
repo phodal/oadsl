@@ -5,7 +5,7 @@ Examples
 
 ### Workflow
 
-```
+```typescript
 let data = {
   transact: {
     name: 'Transact',
@@ -26,7 +26,7 @@ let results = workflowParser(data)
 
 ### Form Validate
 
-```
+```typescript
 const LoginFormValidateMap = {
   phone: {
     require: true,
