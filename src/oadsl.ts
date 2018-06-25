@@ -5,6 +5,7 @@ import { workflowParser } from './workflow/workflow'
 export default {
   SQL: SQL,
   RegexMap: RegexMap,
+  SimTest: SimTest,
   FormValidator: FormValidator,
   workflowParser: workflowParser
 }
