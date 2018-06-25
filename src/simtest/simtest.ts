@@ -1,13 +1,13 @@
-const describe = (desc: any, fn: any) => {
+const simDescribe = (desc: any, fn: any) => {
   console.log(desc)
   fn()
 }
 
-const it = (msg: any, fn: any) => {
+const simIt = (msg: any, fn: any) => {
   describe('  ' + msg, fn)
 }
 
-const matchers = (exp: any) => ({
+const simMatchers = (exp: any) => ({
   toBe: (assertion: any) => {
     if (exp === assertion) {
       console.log('pass')
@@ -19,15 +19,15 @@ const matchers = (exp: any) => ({
   }
 })
 
-const expect = (exp: any) => {
-  matchers(exp)
+const simExpect = (exp: any) => {
+  simMatchers(exp)
 }
 
 const SimTest = {
-  describe,
-  expect,
-  it,
-  matchers
+  describe: simDescribe,
+  expect: simExpect,
+  it: simIt,
+  matchers: simMatchers
 }
 
 module.exports = SimTest
