@@ -4,7 +4,7 @@ const simDescribe = (desc: any, fn: any) => {
 }
 
 const simIt = (msg: any, fn: any) => {
-  describe('  ' + msg, fn)
+  simDescribe('  ' + msg, fn)
 }
 
 const simMatchers = (exp: any) => ({
@@ -23,11 +23,9 @@ const simExpect = (exp: any) => {
   simMatchers(exp)
 }
 
-const SimTest = {
+export const SimTest = {
   describe: simDescribe,
   expect: simExpect,
   it: simIt,
   matchers: simMatchers
 }
-
-module.exports = SimTest

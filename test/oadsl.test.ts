@@ -1,6 +1,7 @@
 import SQL from '../src/chain/chain'
 import { FormValidator, RegexMap } from '../src/validate/validate'
 import { workflowParser } from '../src/workflow/workflow'
+import { SimTest } from '../src/simtest/simtest'
 
 describe('OA DSL Test', () => {
   it('Where defined', () => {
@@ -61,5 +62,11 @@ describe('OA DSL Test', () => {
 
     let result = FormValidator(LoginFormValidateMap, data)
     expect(result).toEqual({ error: 1, key: 'phone' })
+  })
+
+  it('form validate', () => {
+    SimTest.it('', function(param: any) {
+      SimTest.matchers(true).toBe(true)
+    })
   })
 })
