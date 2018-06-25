@@ -2,6 +2,13 @@
 
 > A Series DSL in Action with examples and JavaScript
 
+With
+ 
+ - Regex DSL
+ - Language DSL
+ - Template DSL
+ - Data Structure DSL 
+
 Examples
 ---
 
